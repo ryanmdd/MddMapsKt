@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MddMapsKt</string>
+    <string name="content_description_logo">MDD Logo</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loading">Loading</string>
+    <string-array name="view_pager_items">
+        <item>Farewell, ViewPager.</item>
+        <item>Hello, Epoxy Carousel.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,85 @@
+{
+  "type": "MddComponentScreen",
+  "title": "Home",
+  "layout": {
+    "topBar": {
+      "title": "Top Bar Item",
+      "items": [
+        {
+          "type": "MddButton",
+          "title": "search",
+          "action": {
+            "type": "mddComponentScreen",
+            "url": "/query/search/list"
+          },
+          "attrs": {
+            "icon": "search"
+          }
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Map",
+        "type": "MddMapComponent",
+        "items": [
+          {
+            "type": "MddCarouselComponentItem",
+            "props": {
+              "title": "Some Title Here",
+              "subtitles": [
+                {"key":  "Some Key", "value":  "Some Value"}
+              ],
+              "image": "image",
+              "coordinates": {
+                "lat": 45,
+                "lon": -94
+              },
+              "action": {
+                "type": "mddComponentScreen",
+                "url": "/query/view/asset/{assetId}"
+              }
+            },
+          }
+        ]
+      }
+    ],
+    "bottomBar": {
+      "items": [
+        {
+          "title": "Home",
+          "type": "MddBottomBarItem",
+          "action": {
+            "type": "mddComponentScreen",
+            "url": "/query/home"
+          },
+          "attrs": {
+            "icon": "icon name"
+          }
+        },
+        {
+          "title": "Search",
+          "type": "MddBottomBarItem",
+          "action": {
+            "type": "mddComponentScreen",
+            "url": "/query/search"
+          },
+          "attrs": {
+            "icon": "icon name"
+          }
+        },
+        {
+          "title": "Profile",
+          "type": "MddBottomBarItem",
+          "action": {
+            "type": "mddComponentScreen",
+            "url": "/query/profile"
+          },
+          "attrs": {
+            "icon": "icon name"
+          }
+        }
+      ]
+    }
+  }
+}
